@@ -13,7 +13,7 @@
 
 ### Links
 
-- [**Live Site**](https://ismail-advie.netlify.app/)
+- [**Live Site**](https://ismail-advice.netlify.app/)
 
 ## Process
 
