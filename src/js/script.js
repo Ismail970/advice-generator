@@ -1,5 +1,3 @@
-import "regenerator-runtime";
-
 const diceBtn = document.querySelector(".dice-btn");
 const qouteId = document.getElementById("id");
 const qouteText = document.getElementById("quote");
