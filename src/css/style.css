@@ -1,0 +1,125 @@
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Dark-Blue);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+q {
+    font-size: 1.5rem;
+}
+
+.quote__container {
+    text-align: center;
+    padding: 2em;
+    padding-bottom: 0;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote__id {
+    color: var(--Neon-Green);
+    letter-spacing: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+
+.dice-btn {
+    background-color: var(--Neon-Green);
+    padding: 1em 1em 10px 1em;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(25px);
+    transition: all 350ms;
+}
+
+.dice-btn img {
+    width: 25px;
+}
+
+.dice-btn:hover,
+.dice-btn:focus {
+    box-shadow: 0 0 15px var(--Neon-Green);
+}
+
+.divider {
+    margin-top: 1.5em;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: var(--Neon-Green);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.to-text {
+    quotes: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.attribution a {
+    color: hsl(76, 100%, 50%);
+}
